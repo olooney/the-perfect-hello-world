@@ -1,0 +1,10 @@
+# Python artifacts
+*.py[cod]
+__pycache__/
+*.egg-info/
+
+# Sphinx documentation
+docs/_build/
+
+# General
+*.log
