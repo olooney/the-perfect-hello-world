@@ -1,25 +1,19 @@
 Hello World, finally done Right!
 
-Checklist
----------
-
-[ ] LICENSE
-[ ] README.md
-[ ] .gitignore
-
-[ ] setup.py
-[ ] unit tests
-
 TODO
 ----
+- [X] LICENSE
+- [X] README.md
+- [X] .gitignore
+- [-] setup.py
+- [-] unit tests
+- [X] pylint
+- [X] pep8
 
-[ ] setup build
-[ ] requirements.txt
-[ ] docs
-[ ] logging
-[ ] real docstrings
-[ ] pylint
-[ ] pep8
-[ ] code coverage
+- [ ] requirements.txt
+- [ ] docs
+- [X] logging
+- [-] real docstrings
+- [ ] code coverage
 
 
