@@ -1,7 +1,7 @@
 Hello World, Ruined by "Best Practices"
 ---------------------------------------
 
-Python's one line `print("Hello World!")` has long been famous, but I wanted to
+Python's one line ``print("Hello World!")`` has long been famous, but I wanted to
 see how much overhead (boilerplate) would be generated if I followed ALL of the
 recommended best practices for documenting, packaging, testing, logging, error
 handling, and otherwise annotating a Python project.
@@ -22,17 +22,18 @@ TODO
 - [X] LICENSE
 - [X] README.md
 - [X] .gitignore
-- [ ] setup.py
+- [X] bin script
+- [X] setup.py
 - [ ] unit tests
 - [X] pylint
 - [X] pep8
 - [X] --help and --version 
 
-- [ ] requirements.txt
+- [X] requirements.txt
 - [ ] docs
 - [X] module-level logging
-- [ ] real docstrings
+- [X] real docstrings
 - [ ] code coverage
 - [ ] travis.yml
-- [ ] setup.cfg
+- [ ] setup.cfg?
 

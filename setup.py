@@ -23,9 +23,14 @@ setup(
     author='Oran Looney',
     author_email='olooney@gmail.com',
     url='https://github.com/olooney/the-perfect-hello-world',
-    description='"Hello World" ruined by too many "best practices.',
-    long_description=open('README.md').read(),
+    description='"Hello World" ruined by too many "best practices."',
+    long_description=open('README.rst').read(),
     license="Apache License 2.0",
+    classifiers=[
+        'License :: OSI Approved :: Apache Software License',
+        'Development Status :: 4 - Beta',
+        'Environment :: Console',
+    ],
 
     # technical
     packages=['the_perfect_hello_world'],
