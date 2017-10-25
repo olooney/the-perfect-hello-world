@@ -1,4 +1,6 @@
-"""module doc string goes here"""
+"""Provides HelloWorld (a "flexible" and "robust" "hello world" message
+formatter and printer. Also provides a CLI interface so you can access the full
+power of HelloWorld from the command line.  """
 
 __all__ = ['HelloWorld', 'parse_hello_world_args', 'main']
 
@@ -11,7 +13,7 @@ logger = logging.getLogger(__name__) # pylint: disable=invalid-name
 logger.setLevel(logging.INFO)
 
 class HelloWorld:
-    """class docstring goes here"""
+    """Configurable "hello world" message formatter and printer."""
 
     def __init__(self, greeting='Hello', punctuation='!'):
         """A flexible greeter with configurable salutation and punctuation."""
@@ -75,6 +77,8 @@ def main():
         # core "Hello World" functionality
         hello = HelloWorld(args.greeting, args.punctuation)
         hello.print_greeting(args.target)
+
+        logger.debug("hello_world finished, exiting gracefully")
 
     except Exception:
         logger.exception("hello_world has encountered an unexpected error and will exit.")
