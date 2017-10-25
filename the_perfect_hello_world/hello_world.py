@@ -1,6 +1,6 @@
 """module doc string goes here"""
 
-__all__ = ['HelloWorld', 'parse_hello_world_args']
+__all__ = ['HelloWorld', 'parse_hello_world_args', 'main']
 
 import logging
 import argparse
@@ -51,9 +51,6 @@ def parse_hello_world_args(argv):
     parser.add_argument('-p', '--punctuation',
                         dest='punctuation', default='!', choices=['!', '.', '?'],
                         help="change the final character used at the end of the greeting")
-    parser.add_argument('-o', '--output',
-                        metavar='FILE', type=argparse.FileType('w'), default=sys.stdout,
-                        help="save greeting to the given file")
     parser.add_argument('-v', '--verbose',
                         action='store_true', dest='verbose', default=False,
                         help="prints additional diagnostic messages to stderr")
@@ -77,12 +74,7 @@ def main():
 
         # core "Hello World" functionality
         hello = HelloWorld(args.greeting, args.punctuation)
-        hello.print_greeting(args.target, file=args.output)
-
-        # argparse opened the file for us automatically but we shouldn't let it
-        # dangle any longer then necesssary
-        if args.output != sys.stdout:
-            args.output.close()
+        hello.print_greeting(args.target)
 
     except Exception:
         logger.exception("hello_world has encountered an unexpected error and will exit.")
