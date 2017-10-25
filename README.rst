@@ -34,6 +34,6 @@ TODO
 - [X] module-level logging
 - [X] real docstrings
 - [ ] code coverage
-- [ ] travis.yml
+- [X] travis.yml
 - [ ] setup.cfg?
 
