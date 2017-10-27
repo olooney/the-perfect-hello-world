@@ -5,8 +5,9 @@ __pycache__/
 build/
 dist/
 
-# coverage report cache
+# coverage report 
 .coverage
+htmlcov/
 
 # Sphinx documentation
 docs/_build/

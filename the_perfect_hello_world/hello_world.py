@@ -1,6 +1,18 @@
 """Provides HelloWorld (a "flexible" and "robust" "hello world" message
 formatter and printer. Also provides a CLI interface so you can access the full
-power of HelloWorld from the command line.  """
+power of HelloWorld from the command line.
+
+Basic Example:
+>>> hello = HelloWorld()
+>>> hello.greet()
+'Hello World!'
+
+Advanced Usage:
+>>> bonjour = HelloWorld(greeting='Bonjour', punctuation='.')
+>>> bonjour.greet("le Monde")
+'Bonjour le Monde.'
+
+"""
 
 __all__ = ['HelloWorld', 'parse_hello_world_args', 'main']
 
@@ -17,10 +29,9 @@ class HelloWorld:
 
     def __init__(self, greeting='Hello', punctuation='!'):
         """A flexible greeter with configurable salutation and punctuation."""
-
         self.greeting = greeting
         self.punctuation = punctuation
-        logger.debug("New HelloWorld() object instantiated")
+        logger.info("New HelloWorld() object instantiated")
 
 
     def greet(self, target='World'):
@@ -31,8 +42,10 @@ class HelloWorld:
             punctuation=self.punctuation)
 
 
-    def print_greeting(self, target='World', file=sys.stdout):
+    def print_greeting(self, target='World', file=None):
         """prints the formatted greeting to a file, or stdout by default."""
+        greeting = self.greet(target)
+        logger.info("writing \"{}\" to output stream".format(greeting))
         print(self.greet(target), file=file)
 
 
@@ -57,9 +70,10 @@ def parse_hello_world_args(argv):
                         action='store_true', dest='verbose', default=False,
                         help="prints additional diagnostic messages to stderr")
 
-    logger.debug('CLI arguments parsed successfully')
+    args = parser.parse_args(argv)
+    logger.debug('parsed hello world argments: {!r} as {!r}'.format(argv, args))
+    return args
 
-    return parser.parse_args(argv)
 
 def main():
     """CLI handler when the module is called as a script"""
