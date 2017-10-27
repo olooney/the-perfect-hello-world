@@ -9,8 +9,5 @@ dist/
 .coverage
 htmlcov/
 
-# Sphinx documentation
-docs/_build/
-
 # General
 *.log
