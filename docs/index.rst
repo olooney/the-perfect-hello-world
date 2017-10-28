@@ -4,8 +4,10 @@
    contain the root `toctree` directive.
 
 
-Konichiwa is "Hello World" Done Right(tm)
-=========================================
+Konichiwa 
+=========
+
+Konichiwa is "Hello World" Done Right(tm).
 
 Contents:
 
@@ -14,8 +16,6 @@ Contents:
 
    quickstart
    api
-
-
 
 
 Indices and tables

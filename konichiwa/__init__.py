@@ -15,7 +15,7 @@ Advanced Usage:
 """
 
 __all__ = ['HelloWorld', 'parse_hello_world_args', 'main', '__version__']
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 import logging
 import argparse

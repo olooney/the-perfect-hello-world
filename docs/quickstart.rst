@@ -3,21 +3,27 @@
 Quick Start
 ===========
 
-Command line:
+Install:
 
 .. code-block:: bash
     
-    pip install konichiwa 
+    pip install --extra-index-url https://testpypi.python.org/pypi konichiwa 
+
+Command Line Interface:
+
+.. code-block:: bash
+    
+    $ konichiwa-cli
+    Hello World
+    $ konichiwa-cli --help
 
 Import:
 
 .. code-block:: python
 
-   from konichiwa import HelloWorld
+API Usage:
 
-
-Basic usage:
-
+>>> from konichiwa import HelloWorld
 >>> hello = HelloWorld()
 >>> hello.greet()
 'Hello World!'
