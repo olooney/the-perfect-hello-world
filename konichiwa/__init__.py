@@ -87,14 +87,15 @@ def main():
             logger.setLevel(logging.DEBUG)
             logger.addHandler(logging.StreamHandler(sys.stderr))
 
-        logger.debug("hello_world succesfully initialized")
+        logger.debug("konichiwa succesfully initialized")
 
         # core "Hello World" functionality
         hello = HelloWorld(args.greeting, args.punctuation)
         hello.print_greeting(args.target)
 
-        logger.debug("hello_world finished, exiting gracefully")
+        logger.debug("konichiwa finished, exiting gracefully")
 
     except Exception:
-        logger.exception("hello_world has encountered an unexpected error and will exit.")
+        logger.error("konichiwa has encountered an unexpected error and will exit.") 
+        logger.debug("", exc_info=True)
         sys.exit(1)
