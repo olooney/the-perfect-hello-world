@@ -49,24 +49,8 @@ Features
 - lots of little hidden config files in the project root folder
 
 
-
-Konichiwa is feature complete!
-
-- [X] LICENSE
-- [X] README.md
-- [X] .gitignore
-- [X] bin script
-- [X] setup.py
-- [X] unit tests
-- [X] pylint
-- [X] pep8
-- [X] --help and --version 
-- [X] requirements.txt
-- [X] docs
-- [X] module-level logging
-- [X] real docstrings
-- [X] code coverage
-- [X] travis.yml
+Resources
+---------
 
 https://www.gnu.org/prep/standards/html_node/Command_002dLine-Interfaces.html
 https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial
