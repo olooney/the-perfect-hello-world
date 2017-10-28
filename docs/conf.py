@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# the_perfect_hello_world documentation build configuration file, created by
+# konichiwa documentation build configuration file, created by
 # sphinx-quickstart on Fri Oct 27 07:07:47 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -55,7 +55,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'the_perfect_hello_world'
+project = 'konichiwa'
 copyright = '2017, Oran Looney'
 author = 'Oran Looney'
 
@@ -209,7 +209,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'the_perfect_hello_worlddoc'
+htmlhelp_basename = 'konichiwadoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -231,7 +231,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'the_perfect_hello_world.tex', 'the\\_perfect\\_hello\\_world Documentation',
+  (master_doc, 'konichiwa.tex', 'the\\_perfect\\_hello\\_world Documentation',
    'Oran Looney', 'manual'),
 ]
 
@@ -261,7 +261,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'the_perfect_hello_world', 'the_perfect_hello_world Documentation',
+    (master_doc, 'konichiwa', 'konichiwa Documentation',
      [author], 1)
 ]
 
@@ -275,8 +275,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'the_perfect_hello_world', 'the_perfect_hello_world Documentation',
-   author, 'the_perfect_hello_world', 'One line description of project.',
+  (master_doc, 'konichiwa', 'konichiwa Documentation',
+   author, 'konichiwa', 'One line description of project.',
    'Miscellaneous'),
 ]
 

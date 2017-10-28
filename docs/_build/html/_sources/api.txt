@@ -4,7 +4,7 @@ API
 
 Core Classes
 ------------
-.. module:: the_perfect_hello_world.hello_world
+.. module:: konichiwa
 
 .. autoclass:: HelloWorld
     :members:

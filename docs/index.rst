@@ -1,10 +1,11 @@
-.. the_perfect_hello_world documentation master file, created by
+.. konichiwa documentation master file, created by
    sphinx-quickstart on Fri Oct 27 07:07:47 2017.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to the_perfect_hello_world's documentation!
-===================================================
+
+Konichiwa is "Hello World" Done Right(tm)
+=========================================
 
 Contents:
 

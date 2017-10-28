@@ -1,4 +1,4 @@
-"""Provides HelloWorld (a "flexible" and "robust" "hello world" message
+"""Konichiwa provides HelloWorld (a "flexible" and "robust" "hello world" message
 formatter and printer. Also provides a CLI interface so you can access the full
 power of HelloWorld from the command line.
 
@@ -45,7 +45,7 @@ class HelloWorld:
     def print_greeting(self, target='World', file=None):
         """prints the formatted greeting to a file, or stdout by default."""
         greeting = self.greet(target)
-        logger.info("writing \"{}\" to output stream".format(greeting))
+        logger.info("writing %s to output stream", greeting)
         print(self.greet(target), file=file)
 
 
@@ -71,7 +71,7 @@ def parse_hello_world_args(argv):
                         help="prints additional diagnostic messages to stderr")
 
     args = parser.parse_args(argv)
-    logger.debug('parsed hello world argments: {!r} as {!r}'.format(argv, args))
+    logger.debug('parsed hello world argments: %s as %s', argv, args)
     return args
 
 
@@ -97,6 +97,3 @@ def main():
     except Exception:
         logger.exception("hello_world has encountered an unexpected error and will exit.")
         sys.exit(1)
-
-if __name__ == '__main__':
-    main()

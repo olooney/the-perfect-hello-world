@@ -1,0 +1,18 @@
+Konichiwa is feature complete!
+
+- [X] LICENSE
+- [X] README.md
+- [X] .gitignore
+- [X] bin script
+- [X] setup.py
+- [X] unit tests
+- [X] pylint
+- [X] pep8
+- [X] --help and --version 
+- [X] requirements.txt
+- [X] docs
+- [X] module-level logging
+- [X] real docstrings
+- [X] code coverage
+- [X] travis.yml
+
