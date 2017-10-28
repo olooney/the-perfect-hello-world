@@ -36,6 +36,11 @@ setup(
     # technical
     packages=['konichiwa'],
     scripts=['bin/konichiwa-cli'],
+    entry_points = {
+        'console_scripts': [
+            'konichiwa-cli = konichiwa:main'
+        ]
+    },
     test_suite='test',
     cmdclass={
         'pylint': PyLintCommand,

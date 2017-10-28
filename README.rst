@@ -62,11 +62,13 @@ Features
 
 Resources & Inspirations
 ------------------------
-https://gist.github.com/sloria/7001839
-https://www.python.org/dev/peps/pep-0257/
-https://www.python.org/dev/peps/pep-0008/
-https://www.gnu.org/prep/standards/html_node/Command_002dLine-Interfaces.html
-https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial
-https://www.python.org/dev/peps/pep-0396/
-http://semver.org/
-
+- https://gist.github.com/sloria/7001839
+- https://www.python.org/dev/peps/pep-0257/
+- https://www.python.org/dev/peps/pep-0008/
+- https://www.gnu.org/prep/standards/html_node/Command_002dLine-Interfaces.html
+- https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial
+- https://www.python.org/dev/peps/pep-0396/
+- http://semver.org/
+- https://packaging.python.org/guides/migrating-to-pypi-org/#uploading
+- https://travis-ci.org/
+- https://chriswarrick.com/blog/2014/09/15/python-apps-the-right-way-entry_points-and-scripts/
