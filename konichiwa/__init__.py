@@ -14,7 +14,8 @@ Advanced Usage:
 
 """
 
-__all__ = ['HelloWorld', 'parse_hello_world_args', 'main']
+__all__ = ['HelloWorld', 'parse_hello_world_args', 'main', '__version__']
+__version__ = '1.0.0'
 
 import logging
 import argparse
@@ -57,7 +58,7 @@ def parse_hello_world_args(argv):
     parser.add_argument('target', metavar='TARGET', nargs='?', default='World')
 
     # 'version' is special, like --help. argparse will print the version message and exit 0.
-    parser.add_argument('--version', action='version', version="%(prog)s 1.0.0")
+    parser.add_argument('--version', action='version', version='konichiwa ' + __version__)
 
     # options
     parser.add_argument('-g', '--greeting',

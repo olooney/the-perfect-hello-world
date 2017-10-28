@@ -3,6 +3,7 @@
 from setuptools import setup
 from distutils.cmd import Command
 import subprocess
+import konichiwa
 
 class PyLintCommand(Command):
     """Adaptor to expose pylint as a setup.py command"""
@@ -19,7 +20,7 @@ class PyLintCommand(Command):
 setup(
     # meta
     name='konichiwa',
-    version='1.0.0',
+    version=konichiwa.__version__,
     author='Oran Looney',
     author_email='olooney@gmail.com',
     url='https://github.com/olooney/the-perfect-hello-world',
