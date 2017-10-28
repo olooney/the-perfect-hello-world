@@ -2,7 +2,7 @@ import unittest
 import sys
 from io import StringIO
 from .capture import captured_output
-from the_perfect_hello_world.hello_world import HelloWorld, parse_hello_world_args
+from konichiwa import HelloWorld, parse_hello_world_args
  
 class TestHelloWorld(unittest.TestCase):
 

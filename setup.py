@@ -14,11 +14,11 @@ class PyLintCommand(Command):
     def finalize_options(self): pass
     
     def run(self):
-        subprocess.run(["pylint", "the_perfect_hello_world"])
+        subprocess.run(["pylint", "konichiwa"])
 
 setup(
     # meta
-    name='the_perfect_hello_world',
+    name='konichiwa',
     version='1.0.0',
     author='Oran Looney',
     author_email='olooney@gmail.com',
@@ -33,8 +33,8 @@ setup(
     ],
 
     # technical
-    packages=['the_perfect_hello_world'],
-    scripts=['bin/hello-world-cli'],
+    packages=['konichiwa'],
+    scripts=['bin/konichiwa-cli'],
     test_suite='test',
     cmdclass={
         'pylint': PyLintCommand,

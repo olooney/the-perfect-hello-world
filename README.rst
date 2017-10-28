@@ -1,39 +1,52 @@
-Hello World, Ruined by "Best Practices"
----------------------------------------
+Konichiwa is "Hello World" Done Right(tm)
+=========================================
 
-Python's one line ``print("Hello World!")`` has long been famous, but I wanted to
-see how much overhead (boilerplate) would be generated if I followed ALL of the
-recommended best practices for documenting, packaging, testing, logging, error
-handling, and otherwise annotating a Python project.
+Python has long been famous for having a one line "Hello World!", contrasting
+it to the boilerplate of Java or C++.
 
-Caveat: I know as well as you do that no one would recommend doing all this
-stuff for such a simple project. But I think it illustates a point about how
-mature (and therefore complex) the entire Python toolchain has become.
+.. code-block:: python
 
-Incidently (and this was not at all the goal when I wrote it, just a nice
-side effect) it illustates a typical Python project layout fairly well,
-so if you're at the stage of learning Python where you start to wonder
-about how to best organize your projects... well, you could do worse than
-this project, but there are many good tutorials available.
+  print("Hello World!")
 
 
-TODO
-----
+Features
+--------
+
+- README
+- open source license
+- command line interface:
+    - convenient -cli script installed on PATH
+    - GNU inspired options (--help, --version, and --verbose)
+- full pylint and pep8 compliance
+- module-level logging
+- distutils compatability
+- semi-automated documentation via Sphinx
+- Travis CI integration
+- full suite of unit tests (unittest and doctest)
+- full code coverage
+- lots of little hidden config files in the project root folder
+
+
+
+Konichiwa is feature complete!
+
 - [X] LICENSE
 - [X] README.md
 - [X] .gitignore
 - [X] bin script
 - [X] setup.py
-- [ ] unit tests
+- [X] unit tests
 - [X] pylint
 - [X] pep8
 - [X] --help and --version 
-
 - [X] requirements.txt
-- [ ] docs
+- [X] docs
 - [X] module-level logging
 - [X] real docstrings
-- [ ] code coverage
+- [X] code coverage
 - [X] travis.yml
-- [ ] setup.cfg?
 
+
+
+https://www.gnu.org/prep/standards/html_node/Command_002dLine-Interfaces.html
+https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial
